@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Ubuntu-Light";
+  src: url("../fonts/Ubuntu-Light.ttf") format("truetype");
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  color: #626262;
+}
+.wrap_full {
+  margin: 0 auto;
+  padding-top: 74px;
+  width: 900px;
+}
+.menu-wrap {
+  margin: 0 auto;
+  margin-bottom: 101px;
+  width: 900px;
+}
+.menu {
+  margin: 0 auto;
+  padding-left: 0;
+  width: 572px;
+  /* outline: 1px solid rgba(0, 0, 0, 0.3); */
+}
+.menu-item {
+  display: inline-block;
+  /* line-height: 50px; */
+}
+.menu li:first-child {
+  text-align: left;
+  margin-right: 121px;
+  /* margin-right: 21%; */
+}
+.menu li:nth-child(2) {
+  margin-right: 103px;
+  /* margin-right: 18%; */
+}
+.menu li:nth-child(3) {
+  margin-right: 94px;
+  /* margin-right: 16%; */
+}
+.menu-item:hover {
+  color: #883333;
+  cursor: pointer;
+}
+.menu-link {
+  display: block;
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #626262;
+}
+.menu-link:hover {
+  color: #03a9f4;
+}
+
+.wrap-post-0 {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 470px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+.wrap-post {
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 420px;
+}
+.image-wrap {
+  /* margin: 0 auto; */
+  margin-bottom: 30px;
+  width: 420px;
+}
+.image-post {
+  margin: 0 auto;
+  width: 420px;
+}
+.lifestyle {
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "Ubuntu-Light";
+  text-transform: uppercase;  
+  margin-top: 0;
+  margin-bottom: 23px;
+}
+.text-sign {
+  font-size: 30px;
+  line-height: 36px;
+  margin-top: 0;
+}
+.text-post-1 {
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 130px;
+  white-space: normal;
+}
+
+.text-post-end {
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 57px;
+  white-space: normal;
+}
+
+/* ==================TASK-3=================== */
+.wrap-task-3 {
+  margin: 0 auto;
+  width: 900px;
+}
+.task-3 {
+  width: 900px;
+  /* box-shadow: 0 0 2px rgba(0, 0, 0, 0.3); */
+  white-space: nowrap;
+}
+.wrap-post-023 {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 448px;
+  display: inline-block;
+  white-space: nowrap;
+}
+.wrap-post-23 {
+  margin-left: 0;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  width: 420px;
+}
+.wrap-post-45 {
+  margin-left: 6%;
+  padding-bottom: 10px;
+  width: 420px;
+}
+
+/* ==================button=================== */
+.button-wrap {
+  font-size: 24px;
+  font-family: "serif";
+  line-height: 14px;
+  width: 900px;
+  margin-bottom: 70px;
+}
+
+.button {
+  margin: 0 auto;
+  width: 164px;
+  height: 60px;
+  border: 1px solid #626262;
+}
+.button-text {
+  text-align: center;
+}
+.button:hover{
+  color: #03a9f4;
+  border: 1px solid #03a9f4;
+  cursor: pointer;
+} 
