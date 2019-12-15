@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../../fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  color: #626262;
+}
+.wrap_full {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.menu-wrap {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 960px;
+  /* width: 80%; */
+  background: #ccccaa;
+}
+.menu-item {
+  display: inline-block;
+  /* height: 30px; */
+  line-height: 50px;
+  background: #aaaa88;
+  padding: 0;
+  width: 15%;
+}
+.menu-item:hover {
+  color: #883333;
+  background: #ccccaa;
+  cursor: pointer;
+}
+.menu {
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 0;
+  height: 50px;
+  width: 500px;
+}
+.menu-link {
+  display: block;
+  /* text-align: center; */
+  font-family: sans-serif;
+}
+.menu-link:hover {
+  color: #883333;
+}
+
+.wrap-post-0 {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 470px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+.wrap-post {
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 420px;
+}
+.image-wrap {
+  margin: 0 auto;
+  width: 420px;
+}
+.image-post {
+  margin: 0 auto;
+  width: 420px;
+}
+.lifestyle {
+  line-height: 36px;
+}
+.text-post-1 {
+  line-height: 24px;
+}
+
+/* ==================TASK-3=================== */
+.wrap-task-3 {
+  margin: 0 auto;
+  width: 960px;
+}
+.task-3 {
+  width: 960px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+.wrap-post-023 {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 470px;
+  display: inline-block;
+}
+.wrap-post-23 {
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 420px;
+}
+
+/* ==================TASK-4=================== */
+.wrap-task-4{
+  font-size: 24px;
+  font-family: 'serif';
+  line-height: 14px;
+  width: 960px;
+}
+
+.task-4{
+  margin: 0 auto;
+  width: 470px;
+}
