@@ -1,0 +1,216 @@
+:root {
+  --color-sign: #323232;
+  --color-price: #8c8c8c;
+  --color-hover: #1abc9c;
+  --color-h2: #515151;
+  --color-sign-image-down: #555252;
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("../fonts/Roboto/Roboto-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("../fonts/Open_Sans/OpenSans-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.wrap {
+  width: 1110px;
+  margin: 0 auto;
+  /* background: #cccccc; */
+}
+.nav {
+  /* width: 111; */
+  min-height: 21px;
+  /* background: #eee; */
+  margin-bottom: 98px;
+}
+
+.menu {
+  list-style: none;
+  min-width: 464px;
+  margin: 0;
+  padding: 0;
+  float: right;
+  font-family: "Roboto-Black", sans-serif;
+}
+.menu-item {
+  float: left;
+  min-width: fit-content;
+  line-height: 32px;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-right: 33px;
+  /* padding-right: 33px; */
+}
+.menu-item:hover {
+  color: var(--color-hover);
+  cursor: pointer;
+}
+.menu li:last-child {
+  margin-right: 0;
+}
+/* .menu li:first-child {
+  color: var(--color-hover);
+} */
+.logo-wrap {
+  font-size: 30px;
+  line-height: 32px;
+  text-transform: uppercase;
+  float: left;
+  margin: 0;
+}
+.logo {
+  margin: 0;
+  font-family: "Roboto-Regular", sans-serif;
+  font-stretch: ultra-condensed;
+}
+.logo::first-letter {
+  font-family: "Roboto-Black", sans-serif;
+  color: var(--color-hover);
+}
+.sign {
+  margin: 0 auto;
+  margin-bottom: 92px;
+  width: fit-content;
+  /* outline: 1px solid #555; */
+}
+.sign-h {
+  margin: auto;
+  font-family: "Roboto-Black", sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  color: var(--color-h2);
+}
+.sign::after {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 120px;
+  margin: 0 auto;
+  margin-top: 27px;
+  background-color: var(--color-hover);
+  /* border: 5px solid #1abc9c; */
+}
+.cards {
+  margin-bottom: 70px;
+  font-family: Robo;
+  font-family: "Roboto-Black", sans-serif;
+  font-size: 18px;
+  /* line-height: 40px;  */
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.cards div:nth-child(4n) {
+  margin-right: 0;
+}
+.card {
+  float: left;
+  position: relative;
+  width: 255px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.card:hover {
+  cursor: pointer;
+  --color-sign: #1abc9c;
+  --color-price: #7fd9c7;
+}
+
+.card-2 {
+  width: 350px;
+  position: static;
+  margin-bottom: 80px;
+  /* outline: 1px solid #323232; */
+}
+.card-2:hover{
+  cursor: default;
+}
+
+.image-down-side {
+  display: block;
+  position: absolute;
+  line-height: 40px;
+  height: 40px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin-top: 286px;
+}
+.price {
+  width: 54px;
+  float: right;
+  background-color: var(--color-price);
+  padding-left: 10px;
+}
+.card-sign {
+  margin: 0;
+  padding-left: 10px;
+  background-color: var(--color-sign);
+}
+.img-section-2{
+  margin-bottom: 5px;
+}
+.sign-image-down {
+  color: var(--color-sign-image-down);
+  text-transform: none;
+  font-family: "OpenSans-SemiBold";
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+.sign-image-down::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 136px;
+  margin-left: 0;  
+  background-color: var(--color-hover); 
+}
+.sign-last{
+  margin: 0;
+  margin-bottom: 9px; 
+}
+.post-down-wrap{
+  font-family: "OpenSans-Regular";
+  font-size: 14px;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 13px;
+  color:  var(--color-sign-image-down);
+}
+.post-down{
+  margin: 0;
+  text-transform: none;
+}
+.clear-mr{
+  margin-right: 0;
+}
+.btn{
+  min-width: 160px;
+  min-height: 51px;
+  text-transform: capitalize;
+  border-style: none;
+  border-radius: 5px;
+  background-color: #4ec6ab;
+  color: #fff;
+}
+.btn:hover{
+  cursor: pointer;
+}
