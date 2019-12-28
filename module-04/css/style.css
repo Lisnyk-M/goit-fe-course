@@ -36,9 +36,7 @@ body {
   /* background: #cccccc; */
 }
 .nav {
-  /* width: 111; */
-  min-height: 21px;
-  /* background: #eee; */
+  min-height: 21px;  
   margin-bottom: 98px;
 }
 
@@ -48,48 +46,37 @@ body {
   margin: 0;
   padding: 0;
   float: right;
-  font-family: "Roboto-Black", sans-serif;
 }
 .menu-item {
   float: left;
-  min-width: fit-content;
-  line-height: 32px;
-  font-size: 14px;
-  text-transform: uppercase;
   margin-right: 33px;
-  /* padding-right: 33px; */
-}
-.menu-item:hover {
-  color: var(--color-hover);
-  cursor: pointer;
 }
 .menu li:last-child {
   margin-right: 0;
 }
-/* .menu li:first-child {
-  color: var(--color-hover);
-} */
-.logo-wrap {
-  font-size: 30px;
+.nav-a {  
   line-height: 32px;
+  font-size: 14px;
   text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Roboto-Black", sans-serif;
+  color: var(--color-sign);
+}
+.nav-a:hover {
+  color: var(--color-hover);
+  cursor: pointer;
+}
+.logo-wrap {  
+  line-height: 32px;  
   float: left;
   margin: 0;
 }
-.logo {
+.logo-wrap {
   margin: 0;
-  font-family: "Roboto-Regular", sans-serif;
-  font-stretch: ultra-condensed;
-}
-.logo::first-letter {
-  font-family: "Roboto-Black", sans-serif;
-  color: var(--color-hover);
 }
 .sign {
   margin: 0 auto;
   margin-bottom: 92px;
-  width: fit-content;
-  /* outline: 1px solid #555; */
 }
 .sign-h {
   margin: auto;
@@ -97,6 +84,8 @@ body {
   font-size: 48px;
   line-height: 48px;
   color: var(--color-h2);
+  text-transform: uppercase;
+  text-align: center;
 }
 .sign::after {
   content: "";
@@ -105,15 +94,10 @@ body {
   width: 120px;
   margin: 0 auto;
   margin-top: 27px;
-  background-color: var(--color-hover);
-  /* border: 5px solid #1abc9c; */
+  background-color: var(--color-hover);  
 }
 .cards {
   margin-bottom: 70px;
-  font-family: Robo;
-  font-family: "Roboto-Black", sans-serif;
-  font-size: 18px;
-  /* line-height: 40px;  */
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -122,36 +106,40 @@ body {
 }
 .card {
   float: left;
-  position: relative;
   width: 255px;
+  height: 362px;
   margin-right: 30px;
   margin-bottom: 30px;
+  text-align: center;
+  /* overflow: hidden; */
 }
 .card:hover {
   cursor: pointer;
   --color-sign: #1abc9c;
   --color-price: #7fd9c7;
 }
-
-.card-2 {
-  width: 350px;
-  position: static;
-  margin-bottom: 80px;
-  /* outline: 1px solid #323232; */
+.card-link {
+  display: block;
+  color: #fff;
+  line-height: 322px;
+  text-decoration: none;
+  font-family: "Roboto-Black", sans-serif;
+  font-size: 18px;  
 }
-.card-2:hover{
-  cursor: default;
+.card-image {
+  max-height: 322px;
+  max-width: 100%;
+  vertical-align: middle;
 }
 
 .image-down-side {
   display: block;
-  position: absolute;
   line-height: 40px;
   height: 40px;
   left: 0;
   top: 0;
   width: 100%;
-  margin-top: 286px;
+  text-align: left;
 }
 .price {
   width: 54px;
@@ -164,8 +152,27 @@ body {
   padding-left: 10px;
   background-color: var(--color-sign);
 }
-.img-section-2{
+
+/* section-2 */
+.card-2 {
+  float: left;
+  width: 350px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.card-2:hover {
+  cursor: default;
+}
+.wrap-img-s2 {
+  line-height: 262px;
+}
+.img-section-2 {
   margin-bottom: 5px;
+  max-height: 262px;
+  max-width: 100%;
+  vertical-align: middle;
 }
 .sign-image-down {
   color: var(--color-sign-image-down);
@@ -174,35 +181,37 @@ body {
   font-size: 18px;
   line-height: 26px;
   margin-bottom: 24px;
+  text-align: left;
 }
 .sign-image-down::after {
   content: "";
   display: block;
   height: 3px;
   width: 136px;
-  margin-left: 0;  
-  background-color: var(--color-hover); 
+  margin-left: 0;
+  background-color: var(--color-hover);
 }
-.sign-last{
+.sign-last {
   margin: 0;
-  margin-bottom: 9px; 
+  margin-bottom: 9px;
 }
-.post-down-wrap{
+.post-down-wrap {
   font-family: "OpenSans-Regular";
   font-size: 14px;
   line-height: 26px;
   margin: 0;
   margin-bottom: 13px;
-  color:  var(--color-sign-image-down);
+  color: var(--color-sign-image-down);
 }
-.post-down{
+.post-down {
   margin: 0;
   text-transform: none;
+  text-align: left;
 }
-.clear-mr{
+.clear-mr {
   margin-right: 0;
 }
-.btn{
+.btn {
   min-width: 160px;
   min-height: 51px;
   text-transform: capitalize;
@@ -211,6 +220,6 @@ body {
   background-color: #4ec6ab;
   color: #fff;
 }
-.btn:hover{
+.btn:hover {
   cursor: pointer;
 }
