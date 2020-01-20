@@ -34,7 +34,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .wrap {
-  width: 1600px;
+  width: 1170px;
   margin: 0 auto;
 }
 .nav {
@@ -74,22 +74,32 @@ body {
   float: left;
   margin: 0;
 }
+.logo-img{
+  display: block;
+}
 /* ----------slider------------ */
 .slider-wrap {
-  display: block;
-  position: relative;
-  margin-bottom: 102px;
+  background-image: url('../img/slide4-light.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 98px;
+}
+.slider{
+  height: 600px;
+}
+.container{
+  width: 1110px;
+  margin: 0 auto;   
+  position: relative;  
 }
 .slider {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 }
 .slider-ctrl {
-  background-color: rgb(78, 198, 171);
-  opacity: 0.651;
+  padding: 0;
   position: absolute;
-  left: 245px;
   top: 50%;
   transform: translateY(-50%);
   width: 104px;
@@ -100,30 +110,51 @@ body {
   font-family: "OpenSans-Regular";
   text-transform: uppercase;
   font-size: 36px;
+  background-color: rgb(78, 198, 171);
+  opacity: 0.651;
 }
-.slider-ctrl:hover{
+.slider-ctrl:hover,
+.slider-ctrl:focus{
   cursor: pointer;
+  background-color: #4ec6ab;
+  opacity: 1;
 }
-.slider-ctrl-next {
-  left: 1252px;
+.left-arrow {
+  left: 0;  
+}
+.right-arrow {
+  right: 0;
+}
+.right-arrow::before,
+.left-arrow::before {
+  content: "";
+  --s: 28px;
+  --bd: 4px solid #fff;
+  width: var(--s);
+  height: var(--s);
+  border-left:  var(--bd);
+  border-top:  var(--bd);
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.right-arrow::before {
+   left: 45%;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+.left-arrow::before {
+   left: 55%;
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.slider img {
-  height: 600px;
-  width: 100%;
-  object-fit: cover;
-}
-.slider-item {
-  position: relative;
-}
 .slider-descr {
   position: absolute;
-  top: 220px;
+  top: 240px;
   left: 50%;
   transform: translateX(-50%);
   font-family: "Roboto-Black", "sans-serif";
   color: #fff;
-  font-size: 60px;
+  font-size: 48px;
   font-weight: bold;
   font-stretch: condensed;
   text-transform: uppercase;
