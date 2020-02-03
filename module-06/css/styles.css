@@ -29,10 +29,12 @@
   margin: 0 auto;
 }
 .navigation {
+  width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 38px;  
+  padding-bottom: 38px;  
   min-height: 54px;
 }
 .logo-img {
@@ -170,7 +172,7 @@
 .photo-cards {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 .photo-card{
   width: 380px;
