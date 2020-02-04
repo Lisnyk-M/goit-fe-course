@@ -88,6 +88,10 @@
   transition-timing-function: linear;
   opacity: 1;
 }
+
+.amazing-services{
+  /* background: #aaa; */
+}
 .sign {
   margin: 0 auto 64px ;
 }
@@ -168,6 +172,10 @@
   color: rgb(153, 153, 153);
   line-height: 1.6;
 }
+
+.meet-our-team{
+  /* background: #bbbbbb; */
+}
 /* ===================photo-cards ========================*/
 .photo-cards {
   display: flex;
@@ -208,8 +216,7 @@
   line-height: 1.6;
   text-align: center;
 }
-.img-cover {
-  
+.img-cover {  
   left: -10px;
   top: -10px;
   opacity: 0;
