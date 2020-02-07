@@ -32,8 +32,9 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-top: 27px;
   margin-bottom: 38px;  
-  min-height: 54px;
+  /* min-height: 54px; */
 }
 .logo-img {
   padding: 0;
@@ -121,12 +122,16 @@
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
+  position: relative;
 }
 .sign-large-1::after {
-
   width: 60px;
   height: 3px;
-  margin: 40px auto 0 auto;
+  /* margin: 40px auto 0 auto; */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 60px;
   content: "";
   display: block;
   background-color: rgb(243, 129, 129);
@@ -204,6 +209,8 @@
   margin-bottom: 28px;
   position: relative;
   /* z-index: 10; */
+  left: 0;
+  top: 0;
 }
 
 .name {
@@ -227,8 +234,8 @@
   text-align: center;
 }
 .img-cover {  
-  left: -10px;
-  top: -10px;
+  left: 0px;
+  top: 0px;
   opacity: 0;
   /* opacity: var(--opacity-cover); */
   z-index: 2;
@@ -248,6 +255,17 @@
     rgb(243, 129, 129) 100%
   );
 }
+
+.icons-back {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  opacity: 0;
+  left: 0px;
+  top: 0px;
+}
 .active-block{
   width: 380px;
   height: 470px;
@@ -256,6 +274,7 @@
 .img-back {
   left: 0;
   top: 0;
+  position: absolute;
   background: #1abc9c;
   z-index: -1;
 }
@@ -272,7 +291,9 @@
 }
 .photo-card:hover .img-cover{
   opacity: 0.9;
-  transition-property: opacity;
+  left: -10px;
+  top: -10px;
+  transition-property: opacity, left, top;
   transition-duration: 0.2s;
   transition-timing-function: linear;      
 }
@@ -285,11 +306,21 @@
   top: -10px;
 }
 .photo-card:hover .icons-back{
-  transition-property: opacity;
+  transition-property: opacity, left, top;
   transition-duration: 0.2s;
   transition-timing-function: linear;  
   opacity: 1;
+  left: -10px;
+  top: -10px;
 }
+/* .photo-card:hover .img-back{
+  transition-property: opacity, left, top;
+  transition-duration: 1.2s;
+  transition-timing-function: linear;  
+  opacity: 1;
+  left: -10px;
+  top: -10px;
+} */
 
 .sosial-icon-wrap {
   display: flex;
@@ -305,15 +336,7 @@
    transition-duration: 0.2s;
    transition-timing-function: linear;     
 }  
-.icons-back {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 3;
-  opacity: 0;
-  left: -10px;
-  top: -10px;
-}
+
 
 /* ================= footer =========================================*/
 .footer{
