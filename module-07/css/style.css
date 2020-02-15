@@ -71,7 +71,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  min-width: 486px;
+  /* min-width: 486px; */
 }
 .menu-item {
   display: inline-block;
@@ -84,8 +84,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: #222222;
-  text-transform: uppercase;
-  line-height: 14px;
+  text-transform: uppercase;  
   display: block;
   margin: 0;
 }
@@ -101,6 +100,9 @@
 }
 /* ====================section=========================== */
 .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #222222;
   background-image: url("../img/map-image.png");
   background-repeat: no-repeat;
@@ -110,16 +112,20 @@
   background-position-x: right;
   /* background-position: center; */
 }
+.contact-offset{
+  padding-top: 108px;
+  padding-bottom: 114px;
+
+}
 
 .sign-large-1 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 15px;
   font-size: 40px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   color: rgb(51, 51, 51);
-  line-height: 75px;
   text-align: center;
 }
 
@@ -132,8 +138,6 @@
   font-weight: normal;
   font-stretch: ultra-expanded;
   color: #777777;
-
-  line-height: 1.2;
   text-align: center;
   position: relative;
 }
@@ -166,7 +170,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  /* line-height: 74px; */
+
 }
 .card-sign {
   margin: 0;
@@ -178,7 +182,6 @@
   color: #222222;
   text-transform: uppercase;
   text-align: center;
-  line-height: 1.2;
 }
 
 .card-text {
@@ -194,7 +197,7 @@
 /* ========================section2============================ */
 .sign-form {
   color: #ffffff;
-  padding-top: 92px;
+  /* padding-top: 92px; */
 }
 /* =============================else====================== */
 .form_wrap {
@@ -207,16 +210,16 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.form_input {
-  height: 52px;
+.form_input {  
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .form_decore {
   color: #bbbbbb;
   text-transform: uppercase;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  line-height: 1.2;
+  font-weight: bold;  
   padding-left: 20px;
 }
 .checking:valid {
@@ -227,24 +230,23 @@
 }
 .form_message {
   width: 455px;
-  height: 212px;
-  /* color: #bbbbbb; */
+  height: 212px;  
 }
 .button_wrap {
-  padding-bottom: 114px;
+  margin-top: 30px;
+  /* padding-bottom: 114px; */
 }
 .form_button {
   min-width: 264px;
   height: 65px;
-  margin: 30px auto 0;
+  margin: 0 auto;
   display: block;
   background-color: #fed136;
   color: #ffffff;
   text-transform: uppercase;
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  line-height: 1.2;
+  font-weight: bold;  
   text-align: center;
   border-style: none;
   border-radius: 3px;
