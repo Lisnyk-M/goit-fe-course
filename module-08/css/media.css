@@ -1,0 +1,86 @@
+@media (min-width: 768px){
+    .header{
+        height: 700px;
+        background-image: url("../img/background-tablet-dark.png");
+    }
+    .wrap{
+        width: 768px;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 50px;
+        align-items: center;
+        padding-top: 38px;        
+    }  
+    .logo-href{
+        margin-top: 0;
+    } 
+    .head-sign{
+        font-size: 52px;
+        margin-top: 150px;
+        margin-bottom: 34px;
+        padding: 0 100px;
+    } 
+    .head-description{
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+    .header-button{
+        /* margin: 0 270px; */
+    }
+    .sign-large-1{
+        padding-top: 71px;
+        margin-bottom: 30px;
+    }
+    .cards{
+        width: 492px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 236px;
+    }
+    .order-1{
+        order: 0;
+    }
+    .order-2{
+        order: 2;
+    }
+    .order-3{
+        order: 1;
+    }
+    .order-4{
+        order: 3;
+    }
+    .text-container{
+        padding: 0;
+    }
+    .main{
+        padding-bottom: 40px;
+    }
+    .down-button{
+        /* margin: 0 280px; */
+    }
+}
+/* ================940========================= */
+@media (min-width: 940px){
+    .header{
+        background-image: url("../img/background-pc-dark.png");
+    }
+    .wrap{
+        width: 940px;
+    }
+    .head-sign{
+        padding: 0 200px;
+    }
+    .cards{
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .card{
+        width: 320px;
+    }
+}
