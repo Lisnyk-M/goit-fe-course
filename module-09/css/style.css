@@ -66,6 +66,10 @@
     font-weight: bold;
     text-transform: uppercase;  
   }
+  .logo-img{
+    display: block;
+  }
+
   .menu {
     margin: 0;
     padding: 0;
