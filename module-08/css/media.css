@@ -1,13 +1,14 @@
 @media (min-width: 768px){
     .header{
         height: 700px;
+        margin: 0 auto;
         background-image: url("../img/background-tablet-dark.png");
+        max-width: 768px;
     }
     .wrap{
-        width: 768px;
+        width: 750px;
     }
-    .navigation {
-        display: flex;
+    .navigation {       
         flex-direction: row;
         justify-content: space-between;
         margin: 0 50px;
@@ -17,6 +18,9 @@
     .logo-href{
         margin-top: 0;
     } 
+    .logo-img{
+        display: block;
+    }
     .head-sign{
         font-size: 52px;
         margin-top: 150px;
@@ -68,10 +72,11 @@
 /* ================940========================= */
 @media (min-width: 940px){
     .header{
+        max-width: 922px;
         background-image: url("../img/background-pc-dark.png");
     }
     .wrap{
-        width: 940px;
+        width: 922px;
     }
     .head-sign{
         padding: 0 200px;

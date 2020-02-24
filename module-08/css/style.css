@@ -41,6 +41,8 @@
   /* margin: 0 auto; */
   background-image: url("../img/background-phone.png");
   background-size: cover;
+  /* background-position: center; */
+  /* background-position: center; */
   height: 540px;
   background-repeat: no-repeat;
 }
