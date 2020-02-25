@@ -1,48 +1,47 @@
 /* montserrat-regular - latin */
 @font-face {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-  
-    src: local("Montserrat Regular"), local("Montserrat-Regular"),
-      url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
-      /* Super Modern Browsers */
-        url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Modern Browsers */
-  }
-  /* montserrat-700 - latin */
-  @font-face {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    src: local("Montserrat Bold"), local("Montserrat-Bold"),
-      url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
-      /* Super Modern Browsers */ url("../fonts/montserrat-v14-latin-700.woff")
-        format("woff"); /* Modern Browsers */
-  }
-  
-  @font-face {
-    font-family: "Roboto";  
-    src: local("Roboto Light"),
-    url("../fonts/RobotoLight/RobotoLight.woff") format("woff");
-    font-style: normal;
-    font-weight: 300;
-  }
-  /* roboto-regular - latin */
-  @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;  
-    src: local('Roboto'), local('Roboto-Regular'),       
-         url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/roboto-v20-latin-regular.woff') format('woff') /* Modern Browsers */
-  }
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
 
-.custo {
-  outline: 1px solid #555555;
-  min-height: 100px;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Modern Browsers */
 }
-.container-decore {
-  height: 540px;
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/montserrat-v14-latin-700.woff")
+      format("woff"); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Light"),
+    url("../fonts/RobotoLight/RobotoLight.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v20-latin-regular.woff")
+      format("woff"); /* Modern Browsers */
+}
+.text-align-center {
+  text-align: center;
+}
+.container-fluid {
+  min-height: 540px;
   background-image: url("../img/vector-smart-object.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,120 +49,76 @@
 }
 
 /* ===================head===================== */
-.navigation {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;  
-    align-items: center;
-    padding-top: 30px;
-  }
-  .logo-href{
-    margin-top: 126px;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: "Montserrat", sans-serif;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-transform: uppercase;  
-  }
-  .logo-img{
-    display: block;
-  }
+.logo-href {  
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.nav-a {
+  border: 2px solid rgba(255, 255, 255, 0);
+  color: #ffffff;
+  border-radius: 20px;
+  background-color: rgba(26, 25, 21, 0);  
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.nav-a:hover {
+  border-color: rgba(255, 255, 255, 1);
+  transition: all 0.5s ease;
+}
+.head-sign {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.head-description {
+  font-size: 18px;
+  font-family: "Roboto";
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+}
+.head-button-wrap {
+}
+.header-button {
+  border-radius: 22px;
+  border: 2px solid #ffffff;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgb(255, 78, 80);
+  text-align: center;
+}
+.header-button:hover {
+  background-color: rgba(255, 78, 80, 0);
+  border-color: rgba(255, 78, 80, 1);
+}
+.header-button:hover .header-button-sign {
+  color: rgb(255, 78, 80);
+  transition: all 0.5s ease;
+}
 
-  .menu {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  .menu-item {
-    display: inline-block;
-    position: relative;
-  }
-  .nav-a-border{
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb(255, 255, 255);
-    border-radius: 20px;
-    background-color: rgba(26, 25, 21, 0);
-    min-width: 90px;
-    height: 36px;
-    text-align: center;
-  }
-  
-  .nav-a {
-    display: block;
-    margin: 0; 
-    padding: 10px; 
-    min-width: 90px;
-    border: 2px solid rgba(255, 255, 255, 0);
-    color: #ffffff;
-    border-radius: 20px;
-    background-color: rgba(26, 25, 21, 0);
-    text-align: center;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;    
-  }
-  .nav-a:hover{
-    border-color: rgba(255, 255, 255, 1);
-  }
-.head-sign{
-    /* margin-top: 35px;
-    margin-bottom: 16px; */
-    margin: 35px -10px 16px;
-    /* padding: 0 -200px; */
-
-    font-size: 30px;
-    font-family: "Montserrat", sans-serif;
-    line-height: 1.2;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-transform: uppercase;  
-    text-align: center;
-  }
-  .head-description{
-    margin-top: 0;
-    /* padding: 0 30px; */
-    padding: 0 30px;
-    font-size: 18px;
-    font-family: "Roboto";
-    font-weight: 300;
-    color: rgb(255, 255, 255);
-    line-height: 1.2;
-    text-align: center;
-  }
-  .head-button-wrap{
-    display: flex;
-    justify-content: center; 
-  }
-  .header-button {
-    border-radius: 20px;
-    background-color: rgb(255, 78, 80);
-    text-align: center;
-    margin: 0;
-    /* margin: 0 5px; */
-    /* display: inline-block; */
-  
-  }
-  .header-button-sign {
-    display: block;  
-    margin: 0 auto;
-    padding: 12px 50px;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: "Montserrat";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-  }
+.header-button-sign {
+  display: block;  
+  padding: 12px 30px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
 /* ====================section=========================== */
 
 .sign-large-1 {
-  margin-top: 0;
-  margin-bottom: 15px;
-  padding-top: 68px;
-  /* padding: 68px 5% 5%; */
   font-size: 22px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -173,16 +128,9 @@
 }
 
 /* ============================ card ============================= */
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-between; */
-    justify-content: center;
-    /* align-items: center; */
-  }
-.card {
-  width: 320px;
-  margin-bottom: 28px;
+
+.card:hover {
+  cursor: pointer;
 }
 .img-wrapper {
   position: relative;
@@ -231,7 +179,7 @@
   transform: translate(-50%, -50%);
 }
 .text-container {
-  padding: 0 50px 0;
+  padding: 0 0 0;
 }
 .card-sign {
   margin: 0;
@@ -256,24 +204,28 @@
 }
 /* ============================== end of card ===================== */
 /* ============================== button ===================== */
-.down-button-wrap{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 56px;
+.down-button-wrap {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 56px;
 }
 .down-button {
-
   border: 2px solid rgb(255, 78, 80);
   border-radius: 22px;
-  text-align: center;
-  /* display: inline-block; */
+  text-align: center;  
+}
+.down-button:hover {
+  border: 2px solid rgba(255, 78, 80, 0);
+  background-color: rgb(255, 78, 80);
+}
+.down-button:hover .down-button-sign {
+  color: #ffffff;
+  transition: all 0.5s ease;
 }
 .down-button-sign {
   display: block;
   margin: 0 auto;
-  /* padding: 12px 72px; */
-  padding: 12px 70px;
-  padding-bottom: 12px;
+  padding: 12px 70px; 
   text-decoration: none;
   font-size: 14px;
   font-family: "Montserrat";
@@ -282,80 +234,22 @@
   line-height: 1.2;
 }
 
-@media (min-width:510px) and (max-width: 575px){
-  .head-sign{
-    /* padding: 0 30%; */
-    margin: 0 10%;
+@media (min-width: 576px) {
+  .container-fluid {
+    background-image: url("../img/background-tablet-dark.png");
+    min-height: 700px;
+  }
+  .head-sign {
+    font-size: 52px;
+  }
+  .head-description {
+    font-size: 24px;
   }
 }
-@media (min-width: 576px){
-    .container-decore{
-      background-image: url("../img/background-tablet-dark.png");
-      height: 700px;
-    }
-    .navigation{
-        flex-direction: row;
-        margin: 0  40px;
-    }
-    .logo-href{
-        margin-top: 0;
-    }
-    .head-sign{
-        /* padding: 0 100px; */
-        margin: 160px 0px 16px ;
-        font-size: 52px;
-    }
-    .head-description{
-      font-size: 24px;
-      margin-bottom: 34px;
-      padding: 0 70px;
-    }
-    .cards{
-        margin: 0 auto;
-        width: 492px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        /* align-items: center; */
-    }
-    .card{
-        width: 236px;
-    }
-    .text-container{
-        padding: 0 5px;
-    }
-    .order-1{
-        order: 0;
-    }
-    .order-2{
-        order: 2;
-    }
-    .order-3{
-        order: 1;
-    }
-    .order-4{
-        order: 3;
-    }
-    .down-button-sign{
-        padding: 12px 50px;
-    }
-
-}
-@media (min-width: 940px){
-  .container-decore{
+@media (min-width: 940px) {
+  .container-fluid {
     background-image: url("../img/background-pc-dark.png");
-    height: 700px;
+    min-height: 700px;
   }
+}
 
-    .cards{
-        width: 740px;
-        flex-wrap: nowrap;
-    }
-    .head-sign{
-      margin-bottom: 32px;
-    }
-}
-@media (min-width: 992px){
-  .head-sign{
-    padding: 0 15%;
-  }
-}
