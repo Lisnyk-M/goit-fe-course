@@ -45,6 +45,7 @@
   /* background-position: center; */
   height: 540px;
   background-repeat: no-repeat;
+  max-width: 100%;
 }
 .main{
   padding-bottom: 56px;
@@ -94,11 +95,21 @@
 }
 .header-button {
   border-radius: 20px;
+  border: 2px solid #ffffff;
   background-color: rgb(255, 78, 80);
+  border-color: rgba(255, 255, 255, 0);
   text-align: center;
   margin: 0;
   display: inline-block;
 
+}
+.header-button:hover {
+  background-color: rgba(255, 78, 80, 0);
+  border-color: rgba(255, 78, 80, 1);
+}
+.header-button:hover .header-button-sign {
+  color: rgb(255, 78, 80);
+  transition: all 0.5s ease;
 }
 .header-button-sign {
   display: block;  
@@ -146,8 +157,9 @@
   font-family: "Montserrat", sans-serif;
   font-weight: bold;    
 }
-.nav-a:hover{
+.nav-a:hover {
   border-color: rgba(255, 255, 255, 1);
+  transition: all 0.5s ease;
 }
 
 /* .menu-item:nth-last-child(1) {
@@ -181,6 +193,9 @@
 .card {
   width: 320px;
   margin-bottom: 28px;
+}
+.card:hover{
+  cursor: pointer;
 }
 .img-wrapper {
   position: relative;
@@ -258,6 +273,14 @@
   border: 2px solid rgb(255, 78, 80);
   border-radius: 22px;
   display: inline-block;
+}
+.down-button:hover {
+  border: 2px solid rgba(255, 78, 80, 0);
+  background-color: rgb(255, 78, 80);
+}
+.down-button:hover .down-button-sign {
+  color: #ffffff;
+  transition: all 0.5s ease;
 }
 .down-button-sign {
   display: block;

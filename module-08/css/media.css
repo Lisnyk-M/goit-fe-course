@@ -3,7 +3,8 @@
         height: 700px;
         margin: 0 auto;
         background-image: url("../img/background-tablet-dark.png");
-        max-width: 768px;
+        /* max-width: 768px; */
+        /* max-width: 100%; */
     }
     .wrap{
         width: 750px;
@@ -72,7 +73,8 @@
 /* ================940========================= */
 @media (min-width: 940px){
     .header{
-        max-width: 922px;
+        /* max-width: 922px; */
+        min-width: 100%;
         background-image: url("../img/background-pc-dark.png");
     }
     .wrap{
