@@ -67,10 +67,11 @@
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+  transition: all 0.5s ease;
 }
 .nav-a:hover {
   border-color: rgba(255, 255, 255, 1);
-  transition: all 0.5s ease;
+  
 }
 .head-sign {
   font-size: 30px;
@@ -95,6 +96,7 @@
   border-color: rgba(255, 255, 255, 0);
   background-color: rgb(255, 78, 80);
   text-align: center;
+  transition: all 0.5s ease;
 }
 .header-button:hover {
   background-color: rgba(255, 78, 80, 0);
@@ -102,7 +104,7 @@
 }
 .header-button:hover .header-button-sign {
   color: rgb(255, 78, 80);
-  transition: all 0.5s ease;
+
 }
 
 .header-button-sign {
@@ -113,6 +115,7 @@
   font-family: "Montserrat";
   color: rgb(255, 255, 255);
   font-weight: bold;
+  transition: all 0.5s ease;
 }
 /* ====================section=========================== */
 
@@ -211,6 +214,7 @@
   border: 2px solid rgb(255, 78, 80);
   border-radius: 22px;
   text-align: center;  
+  transition: all 0.5s ease;
 }
 .down-button:hover {
   border: 2px solid rgba(255, 78, 80, 0);
@@ -218,7 +222,7 @@
 }
 .down-button:hover .down-button-sign {
   color: #ffffff;
-  transition: all 0.5s ease;
+
 }
 .down-button-sign {
   display: block;
