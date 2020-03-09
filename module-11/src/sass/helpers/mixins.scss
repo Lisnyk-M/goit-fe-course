@@ -1,0 +1,27 @@
+@mixin position($left: -10px, $top: -10px) {
+  left: $left;
+  top: $top;
+}
+@mixin transition($property: all, $duration: 0.2s, $function: linear) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $function;
+}
+
+@mixin add_gradient($first_color, $second_color, $path: '', $opacity: 0.8){  
+  background-image: linear-gradient(
+    90deg,
+    rgba($first_color, $opacity) 0%,
+    rgba($second_color, $opacity) 100%
+  ),url('#{$path}');
+  background-image: -webkit-linear-gradient(
+    90deg,
+    rgba($first_color, $opacity) 0%,
+    rgba($second_color, $opacity) 100%
+  ),url('#{$path}');
+  background-image: -ms-linear-gradient(
+    90deg,
+    rgba($first_color, $opacity) 0%,
+    rgba($second_color, $opacity) 100%
+  ),url('#{$path}');
+}

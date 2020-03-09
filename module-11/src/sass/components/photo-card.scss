@@ -1,0 +1,99 @@
+.photo-card {
+  width: 380px;
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover &__img-cover {
+    opacity: 0.9;
+    @include position();
+  }
+
+  &:hover &__img {
+    @include position();
+  }
+
+  &:hover &__icons-back {
+    opacity: 1;
+    @include position();
+  }
+}
+
+.photo-card__img {
+  @include transition();
+  margin-bottom: 28px;
+  position: relative;
+  @include position(0, 0);
+}
+
+.photo-card__name {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: $Montserrat-font-family;
+  font-weight: normal;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  color: $grey_51_color;
+}
+
+.photo-card__profession {
+  margin: 0;
+  font-family: $Roboto-font-family;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
+  color: $grey_153_color;
+}
+
+.photo-card__img-cover {
+  @include transition();
+  @include position(0, 0);
+  opacity: 0;
+  z-index: 2;
+  @include add_gradient($active-yellow-color, $pink_color, $opacity: 0.9);
+}
+
+.photo-card__icon {
+  fill: $pink_color;
+
+  &:hover {
+    fill: $primary-white-color;
+  }
+}
+
+.photo-card__icons-back {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  opacity: 0;
+  @include position(0, 0);
+  @include transition();
+}
+
+.photo-card__img-back {
+  @include position(0, 0);
+  position: absolute;
+  background: $green_color;
+  z-index: -1;
+}
+
+.photo-card__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  background: $active-yellow-color;
+  @include transition();
+
+  &:hover {
+    background-color: $pink_color;
+  }
+}

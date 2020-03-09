@@ -1,0 +1,9 @@
+.link-icon {
+  margin-left: 20px;
+  fill: $primary-white-color;
+  @include transition();
+
+  &:hover {
+    fill: $active-yellow-color;
+  }
+}

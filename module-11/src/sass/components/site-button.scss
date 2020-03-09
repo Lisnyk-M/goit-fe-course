@@ -1,0 +1,27 @@
+.site-button {
+  text-align: center;
+}
+
+.site-button__button {
+  margin: 0 auto;
+  padding: 9px;
+  border-style: none;  
+  font-family: $Montserrat-font-family;
+  font-weight: bold;
+  font-size: 14px;  
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: $primary-white-color;
+  background-color: $invisible-white-color;
+}
+
+.site-button__button--active {
+  border: 2px solid $primary-white-color;
+  border-color: $invisible-white-color;
+  @include transition();
+
+  &:hover {
+    border-color: $primary-white-color;
+    cursor: pointer;
+  }
+}

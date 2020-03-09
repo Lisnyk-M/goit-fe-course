@@ -1,0 +1,42 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+@import 'components/fonts.scss';
+@import 'helpers/variables.scss';
+@import 'helpers/mixins.scss';
+@import 'normalize.scss';
+@import 'base.scss';
+
+@import 'components/container.scss';
+@import 'components/site-navigation.scss';
+@import 'components/wrap';
+@import 'components/site-logo__img';
+// @import 'components/header-navigation__img';
+@import 'components/header-logo.scss';
+@import 'components/menu-wrap';
+@import 'components/menu';
+
+@import 'components/link-icon';
+@import 'components/decore';
+@import 'components/site-description';
+@import 'components/main-description';
+@import 'components/site-button';
+@import 'components/label-small';
+@import 'components/label-large';
+@import 'components/services-description';
+@import 'components/cards';
+@import 'components/card';
+@import 'components/team';
+@import 'components/photo-cards';
+@import 'components/photo-card';
+@import 'components/footer';
+@import 'components/wrap-button';
+@import 'components/active-block';
+
+// @import 'components';
+// @import 'components';
+// @import 'components';
+// @import 'components';
+// @import 'components';
+// @import 'components';
+// @import 'components';

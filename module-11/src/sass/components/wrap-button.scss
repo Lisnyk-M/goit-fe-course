@@ -1,0 +1,35 @@
+.wrap-button {
+  display: flex;
+  align-items: center;
+}
+
+.wrap-button__input {
+  width: 230px;
+  height: 36px;
+  padding: 0;
+  margin: 0;  
+  font-family: $Roboto-font-family;
+  font-style: italic;
+  font-size: 15px;  
+  line-height: 1.6;
+  text-align: left;
+  color: $grey_204_color;
+}
+
+.wrap-button__button {
+  min-width: 150px;
+  height: 40px;  
+  font-family: $Montserrat-font-family;
+  font-weight: bold;
+  font-size: 14px;  
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2;
+  border-style: none;
+  color: $primary-white-color;
+  background-color: $green_color;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

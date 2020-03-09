@@ -1,0 +1,11 @@
+.services-description__label::after {
+  width: 60px;
+  height: 3px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 60px;
+  content: '';
+  display: block;
+  background-color: $pink_color;
+}

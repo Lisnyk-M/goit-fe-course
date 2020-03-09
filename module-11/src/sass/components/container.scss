@@ -1,0 +1,16 @@
+.container {
+  min-height: 1000px;
+  margin-bottom: 46px;
+
+  @include add_gradient($active-yellow-color, $pink_color, "../images/header-bg.png");    
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-device-pixel-ratio: 2dppx), (min-resolution: 192dpi) {
+    .container {
+      // background-image: url('../images/header-bg@2x.png');
+      @include add_gradient($active-yellow-color, $pink_color, "../images/header-bg@x.png");
+    }
+  }
+}

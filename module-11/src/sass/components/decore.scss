@@ -1,0 +1,15 @@
+.decore {
+  position: relative;
+  
+  &::after {
+    @include transition();
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 100%;
+    content: '';
+    opacity: 0;
+    height: 3px;
+    background-color: $active-yellow-color;
+  }
+}

@@ -1,0 +1,37 @@
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-width: 400px;
+}
+
+.menu__item {
+  display: inline-block;
+  margin-right: 26px;
+  position: relative;
+
+  &:hover .decore::after {
+    opacity: 1;
+  }
+
+  &:nth-last-child(1) {
+    margin-right: 0;
+  }
+}
+
+.menu__link {
+  @include transition();
+  text-decoration: none;
+  font-size: 14px;
+  font-family: $Montserrat-font-family;
+  font-weight: bold;
+  color: $primary-white-color;
+  text-transform: uppercase;
+  line-height: 14px;
+  display: block;
+  margin: 0;
+}
+
+.menu__link--active:hover {
+  color: $active-yellow-color;
+}

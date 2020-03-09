@@ -1,0 +1,21 @@
+.footer {
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid $grey_204_color;
+  }
+
+  &__text {
+    margin: 21px;
+    font-family: $Montserrat-font-family;
+    font-weight: normal;
+    font-size: 14px;    
+    line-height: 1.2;
+    color: $grey_51_color;
+  }
+
+  &__text-span {
+    color: $pink_color;
+  }
+}
