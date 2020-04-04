@@ -1,0 +1,151 @@
+.footer {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  line-height: 2.083;
+  color: $primary-bg-color;
+}
+
+.footer-wrap {
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.footer__telephone {
+  position: relative;
+  padding-right: 30px;
+  order: 2;
+  font-family: 'Montserrat';
+  font-weight: 600;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    margin-left: 65px;
+
+    &:after{
+      content: '';
+      width: 1px;
+      height: 29px;
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      transform: translateY(-50%);
+      background-color: $another-text-color;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 27px;
+    margin-top: 44px;
+    margin-bottom: 44px;
+    margin-left: 258px;
+  }
+}
+
+.footer__icon {
+  display: block;
+  width: 37px;
+  height: 37px;
+  margin: 0 auto 15px auto;
+  order: 3;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    margin-right: 130px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-right: 378px;
+  }
+
+  @media (min-width: 1680px) {
+    margin-right: 516px;
+  }
+}
+
+.footer__href {
+  text-decoration: none;
+  position: relative;
+}
+
+.footer__icon-phone {
+  position: relative;
+  top: 9px;
+  width: 24px;
+  height: 24px;
+  fill: $primary-orange-color;
+
+  @media (max-width: 1279px) {
+    display: inline-block;
+  }
+  @media (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.footer__icon-phone-1280 {
+  position: relative;
+  top: 9px;
+  width: 32px;
+  height: 34px;
+  fill: $primary-orange-color;
+  display: none;
+
+  @media (min-width: 1280px) {
+    display: inline-block;
+  }
+}
+
+.footer__down-text {
+  margin: 0;
+  padding: 17px 0 17px 0;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 3.409;
+  text-align: center;
+  color: rgba(253, 254, 254, 0.42);
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 14.58px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+}
+
+.navigation-text--font-tablet {
+  @media (min-width: 768px) {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 25px;
+    color: $primary-black-color;
+  }
+}
+
+.navigation-text-second--font-tablet {
+  @media (min-width: 768px) {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 8.75px;
+    text-transform: uppercase;
+  }
+}
+
+.navigation-fire--tablet {
+  @media (min-width: 768px) {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.bg-color-black {
+  background-color: $primary-bg-color;
+}

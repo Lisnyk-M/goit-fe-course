@@ -1,0 +1,372 @@
+.bg-image {
+  background-image: url('../images/wave.png');
+
+  @media (min-width: 768px) {
+    background-image: url('../images/wave-tablet.png');
+  }
+  @media (min-width: 1280px) {
+    background-image: url('../images/wave-1280.png');
+  }
+  @media (min-width: 1680px) {
+    background-image: url('../images/wave-1680.png');
+  }
+}
+
+.first {
+  padding-top: 20px;
+  font-size: 20px;
+  font-family: 'Montserrat';
+  color: $primary-text-color;
+  font-weight: bold;
+  line-height: 1.45;
+  text-align: left;
+
+  @media (min-width: 768px) {
+    padding-top: 37px;
+  }
+  @media (min-width: 1680px) {
+    padding-top: 28px;
+  }
+}
+
+.navigation {
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-link {
+  text-decoration: none;
+}
+
+.navigation-menu-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: 1280px) {
+    flex-basis: 908px;
+  }
+
+  @media (min-width: 1680px) {
+    flex-basis: 1080px;
+  }
+}
+
+.navigation-menu {
+  display: none;
+  padding: 0;
+  list-style: none;
+  font-family: 'Tahoma';
+  font-size: 12px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $menu-color;
+
+  @media (min-width: 1280px) {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 566px;
+  }
+
+  @media (min-width: 1680px) {
+    flex-basis: 670px;
+  }
+}
+
+.navigation-href {
+  text-decoration: none;
+  color: $menu-color;
+
+  &:hover {
+    color: $primary-orange-color;
+  }
+
+  @media (min-width: 1680px) {
+    font-size: 14px;
+    font-family: 'Tahoma';
+    font-weight: bold;
+  }
+}
+
+.navigation-button-wrap {
+  display: none;
+  margin-bottom: -35px;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    margin-left: 200px;
+  }
+}
+
+.navigation-burger {
+  width: 24px;
+  height: 12px;
+
+  @media (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.navigation-text {
+  position: relative;
+  margin: 0;
+  font-size: 15px;
+  font-family: 'Montserrat';
+  font-weight: 800;
+  line-height: 1.1;
+  color: $primary-black-color;
+
+  @media (min-width: 1680px) {
+    font-size: 25px;    
+  }
+}
+
+.navigation-text-second {
+  margin: 0;
+  font-size: 5.3px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $primary-black-color;
+
+  @media (min-width: 1680px) {
+    font-size: 8.75px;
+    line-height: 1.75;
+  }
+}
+
+.first-section__wrap-0 {  
+
+  @media (min-width: 768px) {
+    display: flex;
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: 1680px) {
+    margin-bottom: 41px;
+  }
+}
+
+.first-section__wrap-1 {
+  @media (min-width: 1680px) {
+    padding-top: 44px;
+  }
+}
+
+.color-grey {
+  color: $menu-color
+}
+
+.navigation-fire {
+  width: 15px;
+  height: 22px;
+  position: relative;
+  top: 3px;
+}
+
+.first-section__text {
+  margin: 0;
+  padding-bottom: 36px;
+  font-size: 15px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  line-height: 1.355;
+  color: $primary-text-color;
+
+  @media (min-width: 768px) {
+    padding-right: 40px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.463;
+  }
+
+  @media (min-width: 1680px) {
+    font-size: 21px;
+    line-height: 1.6;
+    padding-bottom: 46px;
+  }
+}
+
+.site-description {
+  margin: 0;
+  padding-bottom: 31px;
+  line-height: 1.45;
+  text-align: left;
+  color: $primary-text-color;
+
+  @media (min-width: 1680px) {
+    font-size: 55px;
+  }
+}
+
+.start_learn {
+  display: block;
+  margin: 0 auto;
+  padding: 16px;
+  margin-bottom: 35px;
+  border-style: none;
+  font-family: 'Tahoma';
+  font-size: 11px;
+  letter-spacing: 0.13em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: $primary-white-color;
+  background-color: $primary-orange-color;
+  border: 2px solid $primary-orange-color;
+
+  @media (min-width: 768px) {
+    margin-left: 0;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 12px;
+    padding: 25.5px;
+  }
+
+  @media (min-width: 1680px) {
+    font-size: 14px;
+    font-family: 'Tahoma';
+    font-weight: bold;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba($primary-black-color, 0);
+    color: $primary-orange-color;
+  }
+}
+
+.first__img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 87px;
+  
+  @media (min-width: 1680px) {
+    margin-right: -150px;
+  }
+}
+
+.list-features {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  padding-bottom: 26px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1280px) {
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: 1680px) {
+    padding-bottom: 86px;
+  }
+}
+
+.list-features__item {
+  margin-bottom: 25px;
+}
+
+.text-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 69px;
+
+  @media (min-width: 768px) {
+    margin-left: 0;
+    justify-content: space-between;
+  }
+}
+
+.list-features__text {
+  width: 130px;
+  padding-left: 12px;
+  margin: 0;
+  text-align: left;
+
+  @media (min-width: 1280px) {
+    width: 280px;
+    position: relative;
+    left: -20px;
+    padding-left: 0;
+    background-color: $primary-white-color;
+  }
+
+  @media (min-width: 1680px) {
+    width: 360px;
+  }
+}
+
+.list-features__border {
+  width: 58px;
+  height: 58px;
+
+  @media (min-width: 1280px) {
+    width: 103px;
+    height: 103px;
+  }
+  border: 2px solid $primary-orange-color;
+  position: relative;
+}
+
+.list-features__icon {
+  @media (max-width: 1279px) {
+    @include icon;
+  }
+
+  @media (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.list-features__icon-1280 {
+  @media (max-width: 1279px) {
+    display: none;
+  }
+
+  @media (min-width: 1280px) {
+    display: block;
+    @include icon(55%, 59px, 59px);
+  }
+}
+
+// .list-features__icon-1::before {
+//   mask-image: url('../images/noun_Female_Student_2575636.svg');
+//   @include list-features-before;
+// }
+
+// .list-features__icon-2::before {
+//   mask-image: url('../images/noun_mobile_learning_first.svg');
+//   @include list-features-before;
+// }
+
+// .list-features__icon-3::before {
+//   mask-image: url('../images/noun_insurance_1989980.svg');
+//   @include list-features-before;
+// }
+
+.shade::after {
+  content: '';
+  position: absolute;
+  // left: 53px;
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: $primary-white-color;
+  width: 10px;
+  height: 36px;
+}

@@ -1,0 +1,85 @@
+// @mixin card-before {
+//   content: '';
+//   position: absolute;
+//   left: 50%;
+//   top: -58px;
+//   transform: translateX(-50%);
+//   width: 42px;
+//   height: 45px;
+//   background-color: $primary-orange-color;
+// }
+
+// @mixin text-wrapper-before {
+//   content: '';
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   width: 58px;
+//   height: 58px;
+//   border: 2px solid $primary-orange-color;
+// }
+
+// @mixin list-features-before {
+//   content: '';
+//   background: $primary-orange-color;
+//   position: absolute;
+//   display: block;
+//   width: 48px;
+//   height: 48px;
+//   left: 50%;
+//   top: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
+@mixin montserrat($family: 'regular') {
+  @if ($family == 'regular') {
+    font-weight: 400;
+  } 
+  @else if ($family == 'medium'){
+    font-weight: 400;
+  }
+}
+
+@mixin orange-rectangle {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -17px;
+  background-color: $primary-orange-color;
+  width: 25px;
+  height: 2px;
+}
+
+@mixin icon($top: 50%, $width: 48px, $height: 48px) {
+  position: absolute;
+  display: block;
+  width: $width;
+  height: $height;
+  left: 50%;
+  top: $top;
+
+  @if ($top) {
+    transform: translateX(-50%);
+  }
+  @if ($top != true) {
+    transform: translate(-50%, -50%);
+  }
+  fill: $primary-orange-color;
+}
+
+@mixin graduates-arrow($shift: 0) {
+  &::before {
+    position: absolute;
+    left: $shift;
+    top: 50%;
+    transform: translateY(-50%);
+    content: url('../images/left-arrow.svg');
+  }
+
+  &::after {
+    position: absolute;
+    right: $shift;
+    top: 50%;
+    transform: translateY(-50%);
+    content: url('../images/right-arrow.svg');
+  }
+}

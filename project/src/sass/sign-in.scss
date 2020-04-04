@@ -1,0 +1,142 @@
+.sign-in {
+  padding-bottom: 23px;
+  text-align: center;
+
+  @media (min-width: 1280px) {
+    padding-bottom: 53px;
+  }
+}
+
+.sign-in__text-first {
+  margin: 0;
+  margin-bottom: 10px;
+  padding-top: 52px;
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  line-height: 1.86;
+  text-align: center;
+  color: $primary-white-color;
+
+  @media (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.729;
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 37.5px;
+    line-height: 1.334;
+    margin-bottom: 68px;
+  }
+}
+
+.sign-in__text-second {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 11px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.818;
+  color: $primary-white-color;
+
+  @media (min-width: 768px) {
+    padding-left: 115px;
+    padding-right: 115px;
+    font-size: 15px;
+    line-height: 1.333;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.361;
+    padding: 0 320px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: 1680px) {
+    font-size: 25px;  
+    padding: 0 280px;  
+  }
+}
+
+.sign-in__bg-image {
+  background: url('../images/sign-in-bg.png');
+  background-size: cover;
+
+  @media (min-width: 768px) {
+    background: url('../images/sign-in-bg-tablet.png');
+    background-size: cover;
+  }
+
+  @media (min-width: 1280px) {
+    background: url('../images/sign-in-bg-1280.png');
+    background-size: cover;
+  }
+
+  @media (min-width: 1680px) {
+    background: url('../images/sign-in-bg-1680.png');
+    background-size: cover;
+  }
+}
+
+.sign-in__wrap {
+  @media (min-width: 768px) {
+    margin-left: 144px;
+    margin-right: 144px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-left: 294px;
+    margin-right: 294px;
+  }
+
+  @media (min-width: 1680px) {
+    margin-left: 360px;
+    margin-right: 360px;
+  }
+}
+
+.sign-in__name,
+.sign-in__phone {
+  padding: 4px 0 4px 22px;
+  margin-bottom: 20px;
+  display: block;
+  width: 100%;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 2.885;
+  border: 2px solid $primary-white-color;
+  color: $primary-white-color;
+  background-color: rgba($color: $primary-white-color, $alpha: 0);
+
+  @media (min-width: 1280px) {
+    font-size: 21px;
+    line-height: 1.8;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 28px;
+  }
+}
+
+.button-correction-tablet {
+  margin-bottom: 55px;
+  @media (min-width: 768px) {
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 58px;
+  }
+}
+
+.align-center-tablet {
+  @media (min-width: 768px) {
+    margin: 0 auto 35px;
+  }
+}

@@ -1,0 +1,256 @@
+.label-img {
+  margin: 0;
+  margin-bottom: 18px;
+  color: $primary-bg-color;
+  text-transform: capitalize;
+  line-height: 1.5;
+
+  @media (min-width: 1280px) {
+    margin-bottom: 55px;
+  }
+}
+
+.move-to-top {
+  margin-top: -300px;
+  margin-bottom: 50px;
+
+  @media (min-width: 1280px) {
+    margin-bottom: 84px;
+  }
+
+  @media (min-width: 1680px) {
+    margin-top: -100px;
+  }
+}
+
+.about-teacher__wrap-0 {
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.about-teacher__wrap-img {
+  @media (min-width: 768px) {
+    padding-top: 6.5px;
+  }
+}
+
+.about-teacher__wrap-1 {
+  @media (min-width: 768px) {
+    padding-left: 44px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-left: 86px;
+  }
+}
+
+.teacher {
+  margin-bottom: 18px;
+
+  @media (min-width: 768px) {
+    // display: block;
+    // width: 100%;
+    // height: auto;
+  }
+}
+
+.name {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  font-family: 'Montserrat';
+  color: $primary-bg-color;
+  font-weight: 800;
+  line-height: 1.823;
+  text-transform: capitalize;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 35px;
+    font-size: 29px;
+  }
+}
+
+.name::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: #d1d1d1;
+}
+
+.about-teacher {
+  position: relative;
+  margin: 0;
+  margin-bottom: 55px;
+  list-style: none;
+  padding-left: 34px;
+
+  @media (min-width: 1280px) {
+    padding-left: 45px;
+  }
+}
+
+.about-teacher__item {
+  margin-bottom: 15px;
+  position: relative;
+  font-family: 'NotoSans';
+  // font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 1.538;
+  color: $primary-bg-color;
+
+  @media (min-width: 1280px) {
+    font-size: 16.667px;
+    line-height: 1.75;
+  }
+}
+
+.about-teacher__item::before {
+  content: url('../images/noun_Check_242424.svg');
+  position: absolute;
+  left: -34px;
+  display: block;
+  width: 16px;
+  height: 12px;
+}
+
+.about-teacher__text {
+  margin: 0 0 16px 16px;
+
+  @media (min-width: 1280px) {
+    font-size: 16.667px;
+    line-height: 1.75;
+  }
+}
+
+.about-teacher__wrap {
+  position: relative;
+}
+
+.about-teacher__wrap::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 16px;
+  top: -16px;
+  width: 25px;
+  height: 2px;
+  background: $primary-orange-color;
+}
+
+.about-teacher__href {
+  font-size: 11px;
+  font-family: 'Montserrat';
+  color: $primary-orange-color;
+  text-decoration: underline;
+  margin-left: 16px;
+  left: 35px;
+
+  @media (min-width: 1280px) {
+    font-size: 16.67px;
+  }
+}
+
+.label-warranty {
+  margin: 0;
+  margin-bottom: 19px;
+  color: $primary-bg-color;
+  line-height: 1.5;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    margin-bottom: 26px;
+  }
+}
+
+.warranty-list {
+  position: relative;
+  list-style: none;
+  padding-top: 24px;
+  padding-bottom: 9px;
+  padding-left: 0;
+  margin: 0;
+  margin-bottom: 46px;
+  margin-left: 36px;
+
+  @media (min-width: 768px) {
+    margin-left: 96px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-left: 170px;
+    padding-right: 130px;
+    padding-bottom: 60px;
+    padding-top: 47px;
+  }
+
+  @media (min-width: 1680px) {
+    padding-top: 60px;
+  }
+}
+
+.bg-mobile {
+  @media (max-width: 767px) {
+    background-color: $gray-color;
+  }
+}
+
+.bg-tablet {
+  @media (min-width: 768px) {
+    background-color: $gray-color;
+  }
+}
+
+.warranty-item {
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.warranty-item:nth-last-child(n + 2)::before {
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 100%;
+  left: -32px;
+  border-left: 1px dashed #c1c1c1;
+
+  @media (min-width: 1280px) {
+    left: -46px;
+    height: calc(100% - 36px);
+    top: 30px;
+  }
+}
+
+.warranty-wrap {
+  margin: 0;
+  position: relative;
+  font-weight: 500;
+  color: $primary-text-color;
+
+  @media (min-width: 1280px) {
+    font-size: 18px;
+  }
+  @media (min-width: 1680px) {
+    font-size: 21px;
+  }
+}
+
+.warranty-wrap::before {
+  content: url('../images/fire.svg');
+  position: absolute;
+  left: -38px;
+  width: 15px;
+  height: 22px;
+  fill: $primary-orange-color;
+
+  @media (min-width: 1280px) {
+    width: 21px;
+    height: 28px;
+    left: -55px;
+  }
+}

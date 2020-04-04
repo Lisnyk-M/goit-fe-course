@@ -1,0 +1,198 @@
+
+.graduates-header {
+  margin: 0;
+  margin-bottom: 17px;
+  line-height: 1.327;
+  text-align: center;
+  color: $primary-bg-color;
+
+  @media (min-width: 768px) {
+    line-height: 2.405;
+  }
+  
+}
+
+.wrap-for-arrows{
+  position: relative;
+
+  @media (min-width: 1280px) {
+    margin-right: 70px;
+    margin-left: 70px;
+  }
+}
+
+.graduates-card {
+  margin-bottom: 17px;  
+  box-shadow: 4px 6.928px 34.96px 11.04px rgba(29, 29, 27, 0.09);
+  text-align: center;
+  background-color: $primary-white-color;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 38px;
+  }
+}
+
+.graduates-foto {
+  padding-top: 22px;
+  padding-bottom: 21px;
+
+  @media (min-width: 768px) {
+    padding-top: 68px;
+  }
+}
+
+.graduates-icon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  width: 25px;
+  height: 14px;
+}
+
+.graduates-wrap-1 {
+}
+
+.graduates-name {
+  margin: 0;
+  margin-bottom: 5px;
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 2.244;
+  text-align: center;
+  color: $primary-orange-color;
+
+  @media (min-width: 768px) {
+    padding-top: 40px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 25px;
+  }
+}
+
+.gratuates-text-first {
+  padding: 0 27px 0 27px;
+  margin: 0;
+  margin-bottom: 11px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12.5px;
+  line-height: 1.333;
+  text-align: center;
+  color: $primary-small-text-color;
+
+  @media (min-width: 768px) {
+    padding-right: 50px;
+  }
+}
+
+.gratuates-text-second {
+  padding: 0 27px 52px 27px;
+  margin: 0;
+  // font-family: 'NotoSans';
+  font-weight: 500;
+  text-align: center;
+  color: $primary-text-color;
+  color: $primary-text-color;
+
+  @media (min-width: 768px) {
+    padding-right: 50px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 16.67px;
+    padding-right: 80px;
+  }
+
+  @media (min-width: 1680px) {
+    padding-right: 100px;
+  }
+}
+
+.graduates-text-hide {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: inline;
+  }
+}
+
+.graduates-href {
+  font-family: 'Montserrat';
+  font-size: 11px;
+  color: $primary-orange-color;
+  text-decoration: underline;
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 16.67px;
+  }
+}
+
+.graduates-icons-wrap {
+  position: relative;
+  margin-bottom: 55px;
+  text-align: center;
+
+  @media (min-width: 1280px) {
+    margin-bottom: 100px;
+  }
+}
+
+.graduates-icons {
+  margin: 0 5px 0 5px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 107, 8, 0.0);
+
+  &:hover{
+    border-color: $primary-orange-color;
+  }
+
+  @media (min-width: 1280px) {
+    margin-left: 17px;
+    margin-right: 17px;
+  }
+}
+
+.hide-for-mobiles{
+  @media (max-width: 767px){
+    display: none;
+  }
+}
+
+.add-arrow-mobile {
+  @media (max-width: 767px) {
+    @include graduates-arrow;
+  }
+
+  &:hover{ 
+  }
+}
+
+.add-arrow-tablet {
+  @media (min-width: 768px) {
+    @include graduates-arrow(-16px);
+  }
+
+  @media (min-width: 1280px) {
+    @include graduates-arrow(-40px);
+  }
+}
+
+@media (min-width: 768px) {
+  .graduates-name,
+  .graduates-card,
+  .gratuates-text-second,
+  .gratuates-text-first {
+    text-align: left;
+    padding-left: 44px;
+  }
+}
