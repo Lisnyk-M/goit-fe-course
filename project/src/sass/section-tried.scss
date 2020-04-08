@@ -35,6 +35,23 @@
   }
 }
 
+.wrap-for-flex {
+  width: 279px;
+
+  @media (min-width: 768px) {
+    width: 247px;
+    height: 428px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 494px;
+  }
+
+  @media (min-width: 1680px) {
+    width: 494px;
+  }
+}
+
 .about-teacher__wrap-1 {
   @media (min-width: 768px) {
     padding-left: 44px;
@@ -47,11 +64,11 @@
 
 .teacher {
   margin-bottom: 18px;
+  display: block;
+  width: 100%;
+  height: auto;
 
   @media (min-width: 768px) {
-    // display: block;
-    // width: 100%;
-    // height: auto;
   }
 }
 

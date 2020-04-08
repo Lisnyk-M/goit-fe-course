@@ -1,5 +1,63 @@
+.block-navigation{
+  // margin: 0 auto;
+  // position: absolute;
+}
+
+.navigation-link-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger-close{
+  width: 18px;
+  height: 18px;
+  position: relative;
+  display: none;
+
+  &:after{
+    content: '';
+    position: absolute;
+    left: -25%;
+    top: 50%;
+    width: 100% * 1.414;
+    height: 2px;
+    background-color: red;
+    transform: translate(-0%, -50%);
+    transform: rotate(45deg);
+   
+    display: block;
+  }
+
+  &:before{
+    content: '';
+    position: absolute;
+    width: 100% * 1.414;
+    top: 50%;
+    left: -25%;
+    height: 2px;
+    background-color: red;
+    transform: rotate(-45deg);
+    display: block;
+  }
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+// .menu-mobile{
+//   font-size: 20px;
+//   font-family: "Montserrat";
+//   color: rgb(24, 25, 29);
+//   font-weight: bold;
+//   line-height: 1.45;
+//   text-align: left;
+// }
+
 .bg-image {
   background-image: url('../images/wave.png');
+  background-position-y: -80px;
 
   @media (min-width: 768px) {
     background-image: url('../images/wave-tablet.png');
@@ -10,6 +68,10 @@
   @media (min-width: 1680px) {
     background-image: url('../images/wave-1680.png');
   }
+}
+
+.position-relative{
+  position: relative;
 }
 
 .first {
@@ -110,6 +172,10 @@
 
   @media (min-width: 1280px) {
     display: none;
+  }
+
+  &:hover{
+    cursor: pointer;
   }
 }
 
@@ -246,10 +312,29 @@
   }
 }
 
+.wrap-pic-img{
+  width: 215px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 370px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 685px;
+  }
+
+  @media (min-width: 1680px) {
+    width: 839px;
+  }
+}
+
 .first__img {
   display: block;
   margin: 0 auto;
   margin-bottom: 87px;
+  width: 100%;
+  height: auto;
   
   @media (min-width: 1680px) {
     margin-right: -150px;

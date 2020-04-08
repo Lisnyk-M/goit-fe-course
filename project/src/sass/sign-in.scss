@@ -58,8 +58,8 @@
   }
 
   @media (min-width: 1680px) {
-    font-size: 25px;  
-    padding: 0 280px;  
+    font-size: 25px;
+    padding: 0 280px;
   }
 }
 
@@ -69,16 +69,37 @@
 
   @media (min-width: 768px) {
     background: url('../images/sign-in-bg-tablet.png');
+
+    @media (min-device-pixel-ratio: 2dppx),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
+      (min-resolution: 192dpi) {
+      background-image: url('../images/sign-in-bg-tablet@2x.png');
+    }
     background-size: cover;
   }
 
   @media (min-width: 1280px) {
     background: url('../images/sign-in-bg-1280.png');
+
+    @media (min-device-pixel-ratio: 2dppx),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
+      (min-resolution: 192dpi) {
+      background-image: url('../images/sign-in-bg-1280@2x.png');
+    }
     background-size: cover;
   }
 
   @media (min-width: 1680px) {
     background: url('../images/sign-in-bg-1680.png');
+
+    @media (min-device-pixel-ratio: 2dppx),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
+      (min-resolution: 192dpi) {
+      background-image: url('../images/sign-in-bg-1680@2x.png');
+    }
     background-size: cover;
   }
 }

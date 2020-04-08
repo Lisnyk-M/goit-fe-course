@@ -11,9 +11,63 @@
   </head>
 
   <body>
+    <div class="first block-navigation"></div>
+    <div class="wrap position-relative">
+      <nav class="navigation">
+        <div class="navigation-link-wrap">
+          <a href="#" class="navigation-link">
+            <div class="navigation-block-first">
+              <p class="navigation-text navigation-text--font-tablet">
+                Hell<img
+                  class="navigation-fire navigation-fire--tablet"
+                  src="images/fire.svg"
+                  alt=""
+                />EN
+              </p>
+            </div>
+            <div class="navigation-block-second">
+              <p
+                class="navigation-text-second navigation-text-second--font-tablet"
+              >
+                Адский
+                <span class="color__span color-for-menu"> английский</span>
+              </p>
+            </div>
+          </a>
+          <div class="burger-close"></div>
+        </div>
+
+        <div class="navigation-menu-wrap">
+          <ul class="navigation-menu">
+            <li class="navigation-item">
+              <a href="#our_program" class="navigation-href"
+                >Программа обучения</a
+              >
+            </li>
+            <li class="navigation-item">
+              <a href="#about_us" class="navigation-href">о нас</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#wariants" class="navigation-href">варианты обучения</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#contacts" class="navigation-href">контакты</a>
+            </li>
+          </ul>
+          <div class="navigation-button-wrap">
+            <button class="start_learn">
+              консультация по телефону
+            </button>
+          </div>
+        </div>
+        <img src="images/b2.svg" alt="" class="navigation-burger" />
+      </nav>
+    </div>
+
+    <!-- ===========================begin=============================== -->
     <section class="first container bg-image">
-      <div class="wrap">
-        <nav class="navigation">
+      <div class="wrap position-relative">
+        <!-- <nav class="navigation">
           <a href="#" class="navigation-link">
             <div class="navigation-block-first">
               <p class="navigation-text navigation-text--font-tablet">
@@ -53,8 +107,8 @@
               </button>
             </div>
           </div>
-          <img src="images/b2.svg" alt="" class="navigation-burger" />
-        </nav>
+          <img src="images/b2.svg" alt="" class="navigation-burger"/>
+        </nav> -->
         <div class="first-section__wrap-0">
           <div class="first-section__wrap-1">
             <h2 class="site-description header-h2-font">
@@ -75,7 +129,7 @@
               хочу на бесплатное занятие
             </button>
           </div>
-          <picture>
+          <!-- <picture>
             <source srcset="images/Pic-1680.png" media="(min-width: 1680px)" />
             <source srcset="images/Pic-1280.png" media="(min-width: 1280px)" />
             <source
@@ -83,8 +137,29 @@
               media="(min-width: 768px) and (max-width: 1279px)"
             />
             <img src="./images/Pic.png" alt="" class="first__img" />
-            <!-- <img src="../images/wave.svg" alt="" class="wave"> -->
-          </picture>
+            
+          </picture> -->
+          <div class="wrap-pic-img">
+            <img
+              src="./images/Pic.png"
+              srcset="
+                images/Pic.png            215w,
+                images/Pic@2x.png         430w,
+                images/Pic-tablet.png     370w,
+                images/Pic-tablet@2x.png  740w,
+                images/Pic-1280.png       685w,
+                images/Pic-1280@2x.png   1370w,
+                images/Pic-1680.png       839w,
+                images/Pic-1680@2x.png   1678w
+              "
+              sizes="(max-width: 767px) 215px,
+              (max-width: 1279px) 370px,
+              (max-width: 1679px) 685px,
+              (min-width: 1680px) 839px"
+              alt="main foto"
+              class="first__img"
+            />
+          </div>
         </div>
 
         <ul class="list-features">
@@ -219,7 +294,7 @@
       </ul>
     </section>
     <div class="wrap">
-      <p class="section-second__subtitle header-h2-font">
+      <p class="section-second__subtitle header-h2-font" id="wariants">
         Как мы это делаем
       </p>
     </div>
@@ -347,7 +422,7 @@
 
     <div class="back-ground-wrap">
       <div class="container">
-        <section class="our-program">
+        <section class="our-program" id="our_program">
           <div class="container">
             <h2 class="our-program__title header-h2-font">Наша программа</h2>
 
@@ -535,29 +610,32 @@
               </li>
             </ul>
           </div>
-          <picture>
-            <source
-              srcset="images/room-learning-1680.png"
-              media="(min-width: 1680px)"
-            />
-            <source
-              srcset="images/room-learning-1280.png"
-              media="(min-width: 1280px)"
-            />
-            <source
-              srcset="images/room-learning-tablet.png"
-              media="(min-width: 768px)"
-            />
+
+          <div class="wrap-our-program__img">
             <img
               src="images/room-learning.png"
-              alt=""
+              srcset="
+                images/room-learning.png            143w,
+                images/room-learning@2x.png         286w,
+                images/room-learning-tablet.png     406w,
+                images/room-learning-tablet@2x.png  812w,
+                images/room-learning-1280.png       546w,
+                images/room-learning-1280@2x.png   1092w,
+                images/room-learning-1680.png       700w,
+                images/room-learning-1680@2x.png   1400w
+              "
+              sizes="(max-width: 767px) 143px,
+              (max-width: 1279px) 406px,
+              (max-width: 1679px) 546px,
+              (min-width: 1680px) 700px"
+              alt="foto learning room"
               class="our-program__img"
             />
-          </picture>
+          </div>
         </section>
       </div>
     </div>
-    <!--  ------------------------numeric-list-2---------------------- -->
+    <!--  ==========================numeric-list-2==================== -->
 
     <div class="wrap">
       <p class="numeric-list-2__img-title header-h2-font">
@@ -605,27 +683,32 @@
     <!--  ----------------------section-tried--------------------- -->
     <div class="container move-to-top">
       <div class="wrap">
-        <p class="label-img header-h2-font">
+        <p class="label-img header-h2-font" id="about_us">
           преподаватель
         </p>
 
         <div class="about-teacher__wrap-0">
           <div class="about-teacher__wrap-img">
-            <picture>
-              <source
-                srcset="images/teacher-1680.png"
-                media="(min-width: 1680px)"
+            <div class="wrap-for-flex">
+              <img
+                src="images/teacher.png"
+                srcset="
+                  images/teacher.png            279w,
+                  images/teacher@2x.png         558w,
+                  images/teacher-tablet.png     247w,
+                  images/teacher-tablet@2x.png  494w,
+                  images/teacher-1280@2x.png    988w,
+                  images/teacher-1680.png       532w,
+                  images/teacher-1680@2x.png   1064w
+                "
+                sizes="(max-width: 767px) 279px,
+                (max-width: 1279px) 247px,
+                (max-width: 1679px) 494px,
+                (min-width: 1680px) 532px"
+                alt="teacher"
+                class="teacher"
               />
-              <source
-                srcset="images/teacher-1280.png"
-                media="(min-width: 1280px) and (max-width: 1679px)"
-              />
-              <source
-                srcset="images/teacher-tablet.png"
-                media="(min-width: 768px) and (max-width: 1279px)"
-              />
-              <img src="images/teacher.png" alt="" class="teacher" />
-            </picture>
+            </div>
           </div>
 
           <div class="about-teacher__wrap-1">
@@ -719,7 +802,7 @@
           <div class="graduates-card add-arrow-tablet">
             <!--add-arrow-tablet -->
             <div class="graduates-wrap-0">
-              <picture>
+              <!-- <picture>
                 <source
                   srcset="images/graduates-foto-1280.png"
                   media="(min-width: 1280px)"
@@ -729,7 +812,22 @@
                   alt=""
                   class="graduates-foto"
                 />
-              </picture>
+              </picture> -->
+              <div class="graduates-wrap-retina">
+                <img
+                  src="images/graduates-foto.png"
+                  srcset="
+                    images/graduates-foto.png          80w,
+                    images/graduates-foto@2x.png      160w,
+                    images/graduates-foto-1280.png    145w,
+                    images/graduates-foto-1280@2x.png 290w
+                  "
+                  sizes="(min-width: 1280px) 145px,
+                  (max-width: 1279px) 80px"
+                  alt=""
+                  class="graduates-foto"
+                />
+              </div>
               <img src="images/vk.svg" alt="" class="graduates-icon" />
             </div>
 
@@ -763,29 +861,90 @@
     <div class="container">
       <div class="wrap">
         <div class="graduates-icons-wrap add-arrow-mobile">
-          <img src="images/graduates-1.png" alt="" class="graduates-icons" />
-          <img src="images/graduates-2.png" alt="" class="graduates-icons" />
-          <img src="images/graduates-3.png" alt="" class="graduates-icons" />
-          <img
-            src="images/graduates-4.png"
-            alt=""
-            class="graduates-icons hide-for-mobiles"
-          />
-          <img
-            src="images/graduates-5.png"
-            alt=""
-            class="graduates-icons hide-for-mobiles"
-          />
-          <img
-            src="images/graduates-6.png"
-            alt=""
-            class="graduates-icons hide-for-mobiles"
-          />
-          <img
-            src="images/graduates-7.png"
-            alt=""
-            class="graduates-icons hide-for-mobiles"
-          />
+          <div class="icons-retina-wrap">
+            <img
+              src="images/graduates-1.png"
+              srcset="
+                images/graduates-1.png     58w,
+                images/graduates-1@2x.png 115w
+              "
+              sizes="(max-width: 767px) 58px"
+              alt="graduates foto"
+              class="graduates-icons"
+            />
+          </div>
+          <div class="icons-retina-wrap">
+            <img
+              src="images/graduates-2.png"
+              srcset="
+                images/graduates-2.png     58w,
+                images/graduates-2@2x.png 115w
+              "
+              sizes="(max-width: 767px) 58px"
+              alt="graduates foto"
+              class="graduates-icons"
+            />
+          </div>
+          <div class="icons-retina-wrap">
+            <img
+              src="images/graduates-3.png"
+              srcset="
+                images/graduates-3.png     58w,
+                images/graduates-3@2x.png 115w
+              "
+              sizes="(max-width: 767px) 58px"
+              alt="graduates foto"
+              class="graduates-icons"
+            />
+          </div>
+          <div class="icons-retina-wrap hide-for-mobiles">
+            <img
+              src="images/graduates-4.png"
+              srcset="
+                images/graduates-4.png     58w,
+                images/graduates-4@2x.png 115w
+              "
+              sizes="(max-width: 767px) 58px"
+              alt="graduates foto"
+              class="graduates-icons"
+            />
+          </div>
+          <div class="icons-retina-wrap hide-for-mobiles">
+            <img
+              src="images/graduates-5.png"
+              srcset="
+                images/graduates-5.png     58w,
+                images/graduates-5@2x.png 115w
+              "
+              sizes="(max-width: 767px) 58px"
+              alt="graduates foto"
+              class="graduates-icons"
+            />
+          </div>
+          <div class="icons-retina-wrap hide-for-mobiles">
+            <img
+              src="images/graduates-6.png"
+              srcset="
+                images/graduates-6.png     58w,
+                images/graduates-6@2x.png 115w
+              "
+              sizes="(max-width: 767px) 58px"
+              alt="graduates foto"
+              class="graduates-icons"
+            />
+          </div>
+          <div class="icons-retina-wrap hide-for-mobiles">
+            <img
+              src="images/graduates-7.png"
+              srcset="
+                images/graduates-7.png     58w,
+                images/graduates-7@2x.png 115w
+              "
+              sizes="(max-width: 767px) 58px"
+              alt="graduates foto"
+              class="graduates-icons"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -795,7 +954,7 @@
       <div class="container">
         <form class="wrap">
           <div class="sign-in">
-            <p class="sign-in__text-first">
+            <p class="sign-in__text-first" id="contacts">
               Регистрация на
               <span class="color__span">бесплатную</span> телефонную
               <span class="color__span">консультацию </span>по нюансам ЗНО по
@@ -865,7 +1024,6 @@
             </div>
           </a>
         </div>
- 
       </footer>
     </div>
 
@@ -877,9 +1035,8 @@
       </div>
     </div>
 
-
-
     <!-- Сюда будет всталена ссылка на файл скриптов -->
+    <!-- <script src="js/mobile_menu_second.js"></script> -->
     <!-- inject:js -->
     <!-- endinject -->
   </body>

@@ -1,4 +1,3 @@
-
 .graduates-header {
   margin: 0;
   margin-bottom: 17px;
@@ -9,10 +8,9 @@
   @media (min-width: 768px) {
     line-height: 2.405;
   }
-  
 }
 
-.wrap-for-arrows{
+.wrap-for-arrows {
   position: relative;
 
   @media (min-width: 1280px) {
@@ -22,7 +20,7 @@
 }
 
 .graduates-card {
-  margin-bottom: 17px;  
+  margin-bottom: 17px;
   box-shadow: 4px 6.928px 34.96px 11.04px rgba(29, 29, 27, 0.09);
   text-align: center;
   background-color: $primary-white-color;
@@ -36,9 +34,22 @@
   }
 }
 
+.graduates-wrap-retina {
+  width: 80px;
+  margin: 0 auto;
+
+  @media (min-width: 1280px) {
+    width: 145px;
+  }
+}
+
 .graduates-foto {
   padding-top: 22px;
   padding-bottom: 21px;
+
+  display: block;
+  width: 100%;
+  height: auto;
 
   @media (min-width: 768px) {
     padding-top: 68px;
@@ -79,7 +90,7 @@
   padding: 0 27px 0 27px;
   margin: 0;
   margin-bottom: 11px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 12.5px;
   line-height: 1.333;
@@ -128,7 +139,7 @@
   color: $primary-orange-color;
   text-decoration: underline;
 
-  &:hover{
+  &:hover {
     cursor: pointer;
   }
 
@@ -141,18 +152,30 @@
   position: relative;
   margin-bottom: 55px;
   text-align: center;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: 1280px) {
     margin-bottom: 100px;
   }
 }
 
-.graduates-icons {
+.icons-retina-wrap {
+  width: 58px;
+  // flex-grow: 0;
+  // display: inline-block;
   margin: 0 5px 0 5px;
-  border-radius: 50%;
-  border: 2px solid rgba(255, 107, 8, 0.0);
+}
 
-  &:hover{
+.graduates-icons {
+  margin: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 107, 8, 0);
+  display: block;
+  width: 100%;
+  height: auto;
+
+  &:hover {
     border-color: $primary-orange-color;
   }
 
@@ -162,18 +185,19 @@
   }
 }
 
-.hide-for-mobiles{
-  @media (max-width: 767px){
+.hide-for-mobiles {
+  @media (max-width: 767px) {
     display: none;
   }
 }
 
 .add-arrow-mobile {
   @media (max-width: 767px) {
+    // flex: 0;
     @include graduates-arrow;
   }
 
-  &:hover{ 
+  &:hover {
   }
 }
 

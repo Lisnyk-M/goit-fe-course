@@ -45,7 +45,7 @@
   position: relative;
   padding-bottom: 36px;
 
-  @media (min-width: 1280px) {    
+  @media (min-width: 1280px) {
     flex-basis: 200px;
 
     &:nth-last-child(1) {
@@ -75,7 +75,7 @@
   line-height: 1.65;
   text-align: center;
   letter-spacing: 0.05em;
-  color: $primary-white-color;  
+  color: $primary-white-color;
 
   @media (min-width: 1280px) {
     padding-bottom: 48px;
@@ -185,22 +185,37 @@
   }
 }
 
-.our-program__img {
+.wrap-our-program__img{
+  width: 143px;
+  min-height: 143px;
   z-index: 0;
   position: absolute;
-  right: 0px;
+  right: 0px; 
   bottom: 244px;
+
   @media (min-width: 768px) {
     bottom: 176px;
+    width: 406px;
   }
 
   @media (min-width: 1280px) {
     left: -35px;
     bottom: 156px;
+    width: 546px;
   }
 
   @media (min-width: 1680px) {
     bottom: 40px;
     left: -180px;
+    width: 700px;
   }
+}
+
+.our-program__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  
+
+
 }
