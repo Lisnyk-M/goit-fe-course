@@ -70,8 +70,17 @@
   }
 }
 
+body{
+  // overflow-y: hidden;
+}
+
 .position-relative{
   position: relative;
+  // left: calc(100vw - 100%);  
+}
+
+.scrollbar-compensation{
+  left: -8.5px;
 }
 
 .first {

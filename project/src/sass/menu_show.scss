@@ -8,6 +8,10 @@
   display: block;
   width: 100%;
   min-height: 400px;
+
+  @media (min-width: 768px) {
+    padding-top: 20px;
+  }
 }
 
 .burger-close-show {
@@ -19,7 +23,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 1.45;
-  color: rgba(255, 255, 255, 1);
+  color: rgba($primary-white-color, 1);
   text-transform: none;
 
   @media (min-width: 768px) {
@@ -28,7 +32,7 @@
 }
 
 .block-navigation-show {
-  background-color: rgba(24, 25, 29, 0.8);
+  background-color: rgba($primary-text-color, 0.9);
   position: absolute;
   display: block;
   z-index: 10;
@@ -37,11 +41,11 @@
 }
 
 .color-menu {
-  color: #fff;
+  color: $primary-white-color;
 }
 
 .color-orange {
-  color: rgb(255, 107, 8);
+  color: $primary-orange-color;
 }
 
 .display-block {
@@ -93,5 +97,15 @@
 
   @media (min-width: 768px) {
     display: flex;
+  }
+}
+
+.wrap-show {
+  // width: 291px;
+}
+
+.first-show {
+  @media (min-width: 768px) {
+    padding-top: 135px;
   }
 }
