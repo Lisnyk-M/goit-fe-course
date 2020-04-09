@@ -185,6 +185,10 @@
   }
 }
 
+.wrap-1-our-program__img{
+  display: flex;
+}
+
 .wrap-our-program__img{
   width: 143px;
   min-height: 143px;
@@ -202,12 +206,14 @@
     left: -35px;
     bottom: 156px;
     width: 546px;
+    max-width: 35.5%;
   }
 
   @media (min-width: 1680px) {
     bottom: 40px;
     left: -180px;
     width: 700px;
+    max-width: 30.5%;
   }
 }
 
